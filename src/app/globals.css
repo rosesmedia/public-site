@@ -22,8 +22,8 @@
   font-stretch: normal;
 }
 
-.ff-soleil {
-  font-family: "soleil" sans-serif;
+.body-text {
+  font-family: "soleil", sans-serif;
   font-weight: 500;
   font-style: normal;
 }

@@ -13,19 +13,28 @@ export default function Home() {
           href="https://signup.roses.media"
           target="_blank"
           rel="noopener noreferrer"
+          className="body-text"
           style={{
             backgroundColor: "#ef4444",
             color: "#fafafa",
             padding: "10px 40px 10px 40px",
             borderRadius: "9999px",
             fontSize: "20px",
-            fontFamily: '"soleil", sans-serif',
-            fontWeight: 500,
           }}
-          className=".ff-soleil"
         >
           Sign Up for Crewing!
         </a>
+
+        <div
+          className="body-text"
+          style={{
+            fontSize: "20px",
+            marginTop: "20px",
+            textAlign: "center",
+          }}
+        >
+          And more coming soon...
+        </div>
       </div>
     </div>
   );
