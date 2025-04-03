@@ -31,6 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/roses-logo.png"
+          type="image/png"
+          sizes="304x304"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -56,7 +64,13 @@ export default function RootLayout({
                 height={59}
                 className="mr-2"
               />
-              Roses Media
+              <div
+                style={{
+                  transform: "translate(0, -3px)",
+                }}
+              >
+                Roses Media
+              </div>
             </AppShellHeader>
             <AppShellMain
               h={"100%"}
