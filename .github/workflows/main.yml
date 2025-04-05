@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Deploy Site
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
