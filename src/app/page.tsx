@@ -1,5 +1,4 @@
 import SlackIcon from "@/components/SlackIcon";
-import { Center, Group } from "@mantine/core";
 
 export default function Home() {
   return (
