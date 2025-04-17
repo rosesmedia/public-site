@@ -16,6 +16,41 @@ export default function Home() {
           rowGap: "10px",
         }}
       >
+        <div
+          className="title-text"
+          style={{
+            fontSize: "40px",
+            textAlign: "center",
+          }}
+        >
+          Quick Links
+        </div>
+        <a
+          href="https://graphics.roses.media"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="body-text"
+          style={{
+            backgroundColor: "#ef4444",
+            color: "#fafafa",
+            padding: "10px 40px 10px 40px",
+            borderRadius: "9999px",
+            fontSize: "20px",
+            textAlign: "center",
+          }}
+        >
+          Graphics Scoreboard Control
+        </a>
+        <div
+          className="title-text"
+          style={{
+            fontSize: "40px",
+            textAlign: "center",
+            marginTop: "20px",
+          }}
+        >
+          Get Involved
+        </div>
         <a
           href="https://signup.roses.media"
           target="_blank"
@@ -32,7 +67,6 @@ export default function Home() {
         >
           Sign Up for Crewing!
         </a>
-
         <a
           href="https://roseslive.slack.com/signup#/domain-signup"
           target="_blank"
@@ -44,8 +78,6 @@ export default function Home() {
             padding: "10px 40px 10px 40px",
             borderRadius: "9999px",
             fontSize: "20px",
-            // textAlign: "center",
-            // display: "flex",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
