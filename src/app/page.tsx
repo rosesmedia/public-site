@@ -1,4 +1,5 @@
 import SlackIcon from "@/components/SlackIcon";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,6 +42,20 @@ export default function Home() {
         >
           Graphics Scoreboard Control
         </a>
+        <Link
+          href={"/obs"}
+          className="body-text"
+          style={{
+            backgroundColor: "#ef4444",
+            color: "#fafafa",
+            padding: "10px 40px 10px 40px",
+            borderRadius: "9999px",
+            fontSize: "20px",
+            textAlign: "center",
+          }}
+        >
+          View OB Kit Info
+        </Link>
         <div
           className="title-text"
           style={{

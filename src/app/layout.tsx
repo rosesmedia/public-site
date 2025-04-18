@@ -9,6 +9,7 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,20 +58,27 @@ export default function RootLayout({
                 display: "flex",
               }}
             >
-              <Image
-                src={"/roses-logo.png"}
-                alt="Roses Live 2025 Logo"
-                width={59}
-                height={59}
-                className="mr-2"
-              />
-              <div
+              <Link
+                href={"/"}
                 style={{
-                  transform: "translate(0, -3px)",
+                  display: "flex",
                 }}
               >
-                Roses Media
-              </div>
+                <Image
+                  src={"/roses-logo.png"}
+                  alt="Roses Live 2025 Logo"
+                  width={59}
+                  height={59}
+                  className="mr-2"
+                />
+                <div
+                  style={{
+                    transform: "translate(0, -3px)",
+                  }}
+                >
+                  Roses Media
+                </div>
+              </Link>
             </AppShellHeader>
             <AppShellMain
               h={"100%"}
