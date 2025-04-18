@@ -52,6 +52,23 @@ export default function Home() {
           Get Involved
         </div>
         <a
+          href="/map"
+          target="_self"
+          rel="noopener noreferrer"
+          className="body-text"
+          style={{
+            backgroundColor: "#ef4444",
+            color: "#fafafa",
+            padding: "10px 40px 10px 40px",
+            borderRadius: "9999px",
+            fontSize: "20px",
+            textAlign: "center",
+          }}
+        >
+          Roses Map
+        </a>
+
+        <a
           href="https://signup.roses.media"
           target="_blank"
           rel="noopener noreferrer"
@@ -88,6 +105,8 @@ export default function Home() {
           <SlackIcon />
           Join the Slack!
         </a>
+
+        
 
         <div
           className="body-text"
