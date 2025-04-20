@@ -56,6 +56,22 @@ export default function Home() {
         >
           View OB Kit Info
         </Link>
+        <a
+          href="https://www.york.ac.uk/map/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="body-text"
+          style={{
+            backgroundColor: "#ef4444",
+            color: "#fafafa",
+            padding: "10px 40px 10px 40px",
+            borderRadius: "9999px",
+            fontSize: "20px",
+            textAlign: "center",
+          }}
+        >
+          Campus Map
+        </a>
         <div
           className="title-text"
           style={{

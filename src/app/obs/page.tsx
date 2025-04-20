@@ -1,51 +1,6 @@
-import { GroupBranding } from "@/util/branding";
-
-const obKits = [
-  {
-    short: "Y-OB0",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "Y-OB1",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "Y-OB2",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "Y-OB3",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "Y-OB4",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "Y-OB5",
-    branding: GroupBranding.York,
-  },
-  {
-    short: "L-OB1",
-    branding: GroupBranding.Lancs,
-  },
-  {
-    short: "L-OB2",
-    branding: GroupBranding.Lancs,
-  },
-  {
-    short: "L-OB3",
-    branding: GroupBranding.Lancs,
-  },
-  {
-    short: "M-OB",
-    branding: GroupBranding.Moorhen,
-  },
-  {
-    short: "DR-OB",
-    branding: GroupBranding.David,
-  },
-];
+import { obKits } from "@/util/tv-kits";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function OBsPage() {
   return (
@@ -60,6 +15,7 @@ export default function OBsPage() {
         return (
           <div
             key={idx}
+            id={kit.shortName.toLowerCase()}
             style={{
               width: "100%",
               backgroundColor: kit.branding.color,
@@ -77,22 +33,43 @@ export default function OBsPage() {
                 fontSize: "30px",
               }}
             >
-              {kit.short}
+              {kit.shortName}
             </div>
             <div className="body-text">
               This kit belongs to {kit.branding.toString()}.
             </div>
-            <a
+            <Link
               className="body-text"
-              href={`https://${kit.short.toLowerCase()}.graphics.roses.media`}
+              href={`https://${kit.shortName.toLowerCase()}.graphics.roses.media`}
               target="_blank"
               rel="noreferrer noopener"
               style={{
                 textDecoration: "underline",
+                width: "min-content",
+                whiteSpace: "nowrap",
               }}
             >
-              {kit.short} Graphics Dashboard
-            </a>
+              {kit.shortName} Graphics Dashboard
+            </Link>
+            <Link
+              className="body-text"
+              href={`/ob/${kit.shortName.toLowerCase()}`}
+              style={{
+                padding: "5px 20px 5px 20px",
+                backgroundColor: kit.branding.buttonColor,
+                color: kit.branding.buttonTextColor,
+                width: "min-content",
+                whiteSpace: "nowrap",
+                marginLeft: "auto",
+                borderRadius: "999px",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <div>View Page</div>
+              <FaArrowRight />
+            </Link>
           </div>
         );
       })}
