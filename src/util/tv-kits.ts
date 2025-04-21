@@ -103,6 +103,10 @@ export const obKits: TOBKit[] = [
     },
   },
   {
+    shortName: "AL-OB",
+    branding: GroupBranding.Untitled,
+  },
+  {
     shortName: "M-OB",
     branding: GroupBranding.Moorhen,
     graphics: {

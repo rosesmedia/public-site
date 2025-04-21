@@ -27,6 +27,13 @@ export class GroupBranding {
     "#ffffff",
     "#1c4587"
   );
+  static readonly Untitled = new GroupBranding(
+    "Various Alumni",
+    "#7e7e7e",
+    "#ffffff",
+    "#ffffff",
+    "#000000"
+  );
 
   private constructor(
     private readonly key: string,
