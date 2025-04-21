@@ -43,7 +43,7 @@ export default function Home() {
           <FaExternalLinkAlt />
         </a>
         <a
-          href="https://www.york.ac.uk/map/"
+          href="https://roseslive.co.uk/map"
           target="_blank"
           rel="noopener noreferrer"
           className="body-text external-link"
