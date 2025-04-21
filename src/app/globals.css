@@ -67,6 +67,7 @@ body {
   border-radius: 9999px;
   font-size: 20px;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .external-link {
@@ -74,6 +75,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .main-page-link:hover,
+  .external-link:hover {
+    transform: scale(1.05);
+  }
 }
 
 .slack-link {
@@ -96,4 +104,13 @@ body {
 
 .status-label {
   padding-right: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: var(--group-wrap, wrap);
+  justify-content: center;
+  align-items: center;
+  gap: var(--group-gap, var(--mantine-spacing-md));
 }

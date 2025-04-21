@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { obKits } from "@/util/tv-kits";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
 
 /**
  * Pre-generate the list of OB Kits for that 'dynamic' route so you don't have to make a new page for each OB Kit
@@ -61,8 +61,34 @@ export default async function SingleOBKitPage({
       >
         {obKit.shortName}
       </h1>
+      <div className="group">
+        <Link
+          className="body-text external-link"
+          href={`https://${obKit.shortName.toLowerCase()}.graphics.roses.media`}
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{
+            fontSize: "15px",
+            borderWidth: "2px",
+            borderColor: obKit.branding.getBorderColor(
+              obKit.branding.buttonColor
+            ),
+          }}
+        >
+          <div>{obKit.shortName} Graphics Dashboard</div>
+          <FaExternalLinkAlt />
+        </Link>
+      </div>
       {obKit.wifi?.ssid && (
         <>
+          <h2
+            style={{
+              fontSize: "40px",
+            }}
+            className="title-text"
+          >
+            WiFi
+          </h2>
           <div className="body-text">
             This OB Kit advertises the wifi network {obKit.wifi.ssid}{" "}
             {obKit.wifi.password ? (
