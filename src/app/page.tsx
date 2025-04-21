@@ -74,19 +74,7 @@ export default function Home() {
           href="https://roseslive.slack.com/signup#/domain-signup"
           target="_blank"
           rel="noopener noreferrer"
-          className="body-text"
-          style={{
-            backgroundColor: "#000",
-            color: "#fafafa",
-            padding: "10px 40px 10px 40px",
-            borderRadius: "9999px",
-            fontSize: "20px",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "10px",
-          }}
+          className="body-text slack-link"
         >
           <SlackIcon />
           Join the Slack!
