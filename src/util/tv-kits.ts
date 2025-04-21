@@ -8,6 +8,9 @@ export interface TOBKit {
     ssid?: string;
     password?: string;
   };
+  graphics?: {
+    uptimeKumaMonitorID?: number;
+  };
 }
 
 export const obKits: TOBKit[] = [
@@ -19,6 +22,9 @@ export const obKits: TOBKit[] = [
       ssid: "Y-OB0Net",
       password: "HappyGameDay!",
     },
+    graphics: {
+      uptimeKumaMonitorID: 58,
+    },
   },
   {
     shortName: "Y-OB1",
@@ -27,6 +33,9 @@ export const obKits: TOBKit[] = [
       advertisesRosesMedia: false,
       ssid: "Y-OB1Net",
       password: "HappyGameDay!",
+    },
+    graphics: {
+      uptimeKumaMonitorID: 59,
     },
   },
   {
@@ -37,10 +46,16 @@ export const obKits: TOBKit[] = [
       ssid: "Y-OB2Net",
       password: "HappyGameDay!",
     },
+    graphics: {
+      uptimeKumaMonitorID: 60,
+    },
   },
   {
     shortName: "Y-OB3",
     branding: GroupBranding.York,
+    graphics: {
+      uptimeKumaMonitorID: 61,
+    },
   },
   {
     shortName: "Y-OB4",
@@ -49,6 +64,9 @@ export const obKits: TOBKit[] = [
       advertisesRosesMedia: false,
       ssid: "Y-OB4Net",
       password: "HappyGameDay!",
+    },
+    graphics: {
+      uptimeKumaMonitorID: 62,
     },
   },
   {
@@ -59,25 +77,43 @@ export const obKits: TOBKit[] = [
       ssid: "Y-OB5Net",
       password: "HappyGameDay!",
     },
+    graphics: {
+      uptimeKumaMonitorID: 63,
+    },
   },
   {
     shortName: "L-OB1",
     branding: GroupBranding.Lancs,
+    graphics: {
+      uptimeKumaMonitorID: 64,
+    },
   },
   {
     shortName: "L-OB2",
     branding: GroupBranding.Lancs,
+    graphics: {
+      uptimeKumaMonitorID: 65,
+    },
   },
   {
     shortName: "L-OB3",
     branding: GroupBranding.Lancs,
+    graphics: {
+      uptimeKumaMonitorID: 66,
+    },
   },
   {
     shortName: "M-OB",
     branding: GroupBranding.Moorhen,
+    graphics: {
+      uptimeKumaMonitorID: 68,
+    },
   },
   {
     shortName: "DR-OB",
     branding: GroupBranding.David,
+    graphics: {
+      uptimeKumaMonitorID: 69,
+    },
   },
 ];

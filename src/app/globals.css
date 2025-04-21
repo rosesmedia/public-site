@@ -88,3 +88,12 @@ body {
   justify-content: center;
   gap: 10px;
 }
+
+.status-img {
+  border-radius: 9999px;
+  margin-left: auto;
+}
+
+.status-label {
+  padding-right: 20px;
+}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { obKits } from "@/util/tv-kits";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
@@ -61,13 +62,55 @@ export default async function SingleOBKitPage({
         {obKit.shortName}
       </h1>
       {obKit.wifi?.ssid && (
-        <div className="body-text">
-          This OB Kit advertises the wifi network {obKit.wifi.ssid}{" "}
-          {obKit.wifi.password ? (
-            <>with the password {obKit.wifi.password}</>
-          ) : (
-            <>which is open to the public, not sure whose idea that was.</>
-          )}
+        <>
+          <div className="body-text">
+            This OB Kit advertises the wifi network {obKit.wifi.ssid}{" "}
+            {obKit.wifi.password ? (
+              <>with the password {obKit.wifi.password}</>
+            ) : (
+              <>which is open to the public, not sure whose idea that was.</>
+            )}
+          </div>
+          <br />
+        </>
+      )}
+      {obKit.graphics?.uptimeKumaMonitorID && (
+        <div>
+          <h2
+            style={{
+              fontSize: "40px",
+            }}
+            className="title-text"
+          >
+            Graphics Dashboard Status
+          </h2>
+          <table
+            className="body-text"
+            style={{
+              borderCollapse: "separate",
+              borderSpacing: "5px",
+            }}
+          >
+            <tbody>
+              {["Status", "Uptime", "Ping", "Avg-response", "Cert-exp"].map(
+                (val, idx) => (
+                  <tr key={idx}>
+                    <td className="status-label">{val}</td>
+                    <td>
+                      <img
+                        height={20}
+                        src={`https://uptime.comp.ystv.co.uk/api/badge/${
+                          obKit.graphics?.uptimeKumaMonitorID
+                        }/${val.toLowerCase()}?style=for-the-badge`}
+                        alt={`A badge displaying the current ${val.toLowerCase()} of the graphics dashboard for the OB Kit`}
+                        className="status-img"
+                      />
+                    </td>
+                  </tr>
+                )
+              )}
+            </tbody>
+          </table>
         </div>
       )}
     </div>
