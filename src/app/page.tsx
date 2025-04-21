@@ -1,5 +1,6 @@
 import SlackIcon from "@/components/SlackIcon";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -26,51 +27,29 @@ export default function Home() {
         >
           Quick Links
         </div>
-        <a
-          href="https://graphics.roses.media"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="body-text"
-          style={{
-            backgroundColor: "#ef4444",
-            color: "#fafafa",
-            padding: "10px 40px 10px 40px",
-            borderRadius: "9999px",
-            fontSize: "20px",
-            textAlign: "center",
-          }}
-        >
-          Graphics Scoreboard Control
-        </a>
         <Link
           href={"/obs"}
-          className="body-text"
-          style={{
-            backgroundColor: "#ef4444",
-            color: "#fafafa",
-            padding: "10px 40px 10px 40px",
-            borderRadius: "9999px",
-            fontSize: "20px",
-            textAlign: "center",
-          }}
+          className="body-text main-page-link"
         >
           View OB Kit Info
         </Link>
         <a
+          href="https://graphics.roses.media"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="body-text external-link"
+        >
+          <div>Graphics Scoreboard Control</div>
+          <FaExternalLinkAlt />
+        </a>
+        <a
           href="https://www.york.ac.uk/map/"
           target="_blank"
           rel="noopener noreferrer"
-          className="body-text"
-          style={{
-            backgroundColor: "#ef4444",
-            color: "#fafafa",
-            padding: "10px 40px 10px 40px",
-            borderRadius: "9999px",
-            fontSize: "20px",
-            textAlign: "center",
-          }}
+          className="body-text external-link"
         >
-          Campus Map
+          <div>Campus Map</div>
+          <FaExternalLinkAlt />
         </a>
         <div
           className="title-text"
@@ -86,17 +65,10 @@ export default function Home() {
           href="https://signup.roses.media"
           target="_blank"
           rel="noopener noreferrer"
-          className="body-text"
-          style={{
-            backgroundColor: "#ef4444",
-            color: "#fafafa",
-            padding: "10px 40px 10px 40px",
-            borderRadius: "9999px",
-            fontSize: "20px",
-            textAlign: "center",
-          }}
+          className="body-text external-link"
         >
-          Sign Up for Crewing!
+          <div>Sign Up for Crewing!</div>
+          <FaExternalLinkAlt />
         </a>
         <a
           href="https://roseslive.slack.com/signup#/domain-signup"
