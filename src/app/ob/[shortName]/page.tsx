@@ -19,7 +19,7 @@ export default async function SingleOBKitPage({
 }) {
   const awaitedParams = await params;
   const obKit = obKits.find(
-    (v) => v.shortName.toLowerCase() == awaitedParams.shortName
+    (v) => v.shortName.toLowerCase() == awaitedParams.shortName,
   )!;
 
   return (
@@ -45,7 +45,7 @@ export default async function SingleOBKitPage({
           gap: "10px",
           borderWidth: "2px",
           borderColor: obKit.branding.getBorderColor(
-            obKit.branding.buttonColor
+            obKit.branding.buttonColor,
           ),
         }}
       >
@@ -71,7 +71,7 @@ export default async function SingleOBKitPage({
             fontSize: "15px",
             borderWidth: "2px",
             borderColor: obKit.branding.getBorderColor(
-              obKit.branding.buttonColor
+              obKit.branding.buttonColor,
             ),
           }}
         >
@@ -133,7 +133,7 @@ export default async function SingleOBKitPage({
                       />
                     </td>
                   </tr>
-                )
+                ),
               )}
             </tbody>
           </table>
