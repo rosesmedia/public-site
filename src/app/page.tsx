@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface HomeLinkProps {
-  style?: 'slack';
+  style?: "slack";
   title: string;
   url: string;
 }
@@ -14,81 +14,87 @@ interface HomeSection {
 }
 
 function HomeLink(props: HomeLinkProps) {
-  const isExternalLink = !props.url.startsWith('/') && !props.style;
+  const isExternalLink = !props.url.startsWith("/") && !props.style;
 
-  return <>
-    <Link
-      href={props.url}
-      target="_blank"
-      className={`body-text home-link ${props.style ? `${props.style}-link` : ''}`}
-    >
-      {props.style === 'slack' && <SlackIcon />}
-      {props.title}
-      {isExternalLink && <FaExternalLinkAlt />}
-    </Link>
-  </>
+  return (
+    <>
+      <Link
+        href={props.url}
+        target="_blank"
+        className={`body-text home-link ${props.style ? `${props.style}-link` : ""}`}
+      >
+        {props.style === "slack" && <SlackIcon />}
+        {props.title}
+        {isExternalLink && <FaExternalLinkAlt />}
+      </Link>
+    </>
+  );
 }
 
 function Section(props: HomeSection) {
   console.log(props);
 
-  return <>
-    <div
-      className="title-text"
-      style={{
-        fontSize: "40px",
-        textAlign: "center",
-      }}
-    >
-      {props.title}
-    </div>
+  return (
+    <>
+      <div
+        className="title-text"
+        style={{
+          fontSize: "40px",
+          textAlign: "center",
+        }}
+      >
+        {props.title}
+      </div>
 
-    {props.links.map(link => <HomeLink key={link.title} {...link} />)}
-  </>
+      {props.links.map((link) => (
+        <HomeLink key={link.title} {...link} />
+      ))}
+    </>
+  );
 }
 
 const SECTIONS: HomeSection[] = [
   {
-    title: 'Quick Links',
+    title: "Quick Links",
     links: [
       {
-        title: 'View OB Kit Info',
-        url: '/obs',
+        title: "View OB Kit Info",
+        url: "/obs",
       },
       {
-        title: 'Graphics Scoreboard Control',
-        url: 'https://graphics.roses.media',
+        title: "Graphics Scoreboard Control",
+        url: "https://graphics.roses.media",
       },
       {
-        title: 'Campus Map',
-        url: 'https://roseslive.co.uk/map',
-      }
-    ],
-  },
-  {
-    title: 'Tech links',
-    links: [
-      {
-        title: 'Go Live instructions',
-        url: 'https://docs.google.com/document/d/1kQcz9uh8wqEfJqCae-_olfhB3wvBGgQV1QxGBcpwnQo/edit?tab=t.0',
-      },
-      {
-        title: 'OB Stream keys/configurations',
-        url: 'https://docs.google.com/spreadsheets/d/12LvxeXGz3GcIUrza5TVJ6PbAsd7t6gQXDRj_jFvKFgk/edit?gid=0#gid=0',
+        title: "Campus Map",
+        url: "https://roseslive.co.uk/map",
       },
     ],
   },
   {
-    title: 'Get Involved',
+    title: "Tech links",
     links: [
       {
-        title: 'Sign Up For Crewing!',
-        url: 'https://signup.roses.media',
+        title: "Go Live instructions",
+        url: "https://docs.google.com/document/d/1kQcz9uh8wqEfJqCae-_olfhB3wvBGgQV1QxGBcpwnQo/edit?tab=t.0",
       },
       {
-        title: 'Join the Slack!',
-        url: 'https://roseslive.slack.com/signup#/domain-signup',
-        style: 'slack',
+        title: "OB Stream keys/configurations",
+        url: "https://docs.google.com/spreadsheets/d/12LvxeXGz3GcIUrza5TVJ6PbAsd7t6gQXDRj_jFvKFgk/edit?gid=0#gid=0",
+      },
+    ],
+  },
+  {
+    title: "Get Involved",
+    links: [
+      {
+        title: "Sign Up For Crewing!",
+        url: "https://signup.roses.media",
+      },
+      {
+        title: "Join the Slack!",
+        url: "https://roseslive.slack.com/signup#/domain-signup",
+        style: "slack",
       },
     ],
   },
@@ -110,7 +116,9 @@ export default function Home() {
           rowGap: "10px",
         }}
       >
-        {SECTIONS.map(section => <Section key={section.title} {...section} />)}
+        {SECTIONS.map((section) => (
+          <Section key={section.title} {...section} />
+        ))}
 
         <div
           className="body-text"
