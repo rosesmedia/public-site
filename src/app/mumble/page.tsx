@@ -57,22 +57,24 @@ export default function MumblePage() {
             Click the <b>+</b> button in the top right, then enter the following
             information:
           </li>
-          <tbody>
-            {mumbleFields.map(({ ios, value }, idx) => (
-              <tr key={idx}>
-                <td className="status-label">
-                  <b>{ios}</b>
-                </td>
-                <td
-                  style={{
-                    marginLeft: "auto",
-                  }}
-                >
-                  {value}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          <table>
+            <tbody>
+              {mumbleFields.map(({ ios, value }, idx) => (
+                <tr key={idx}>
+                  <td className="status-label">
+                    <b>{ios}</b>
+                  </td>
+                  <td
+                    style={{
+                      marginLeft: "auto",
+                    }}
+                  >
+                    {value}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
           <br />
           <li>
             Click <b>Done</b> in the top right
@@ -114,22 +116,24 @@ export default function MumblePage() {
             Click the <b>+</b> button in the top right, then enter the following
             information:
           </li>
-          <tbody>
-            {mumbleFields.map(({ ios, android, value }, idx) => (
-              <tr key={idx}>
-                <td className="status-label">
-                  <b>{android ?? ios}</b>
-                </td>
-                <td
-                  style={{
-                    marginLeft: "auto",
-                  }}
-                >
-                  {value}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          <table>
+            <tbody>
+              {mumbleFields.map(({ ios, android, value }, idx) => (
+                <tr key={idx}>
+                  <td className="status-label">
+                    <b>{android ?? ios}</b>
+                  </td>
+                  <td
+                    style={{
+                      marginLeft: "auto",
+                    }}
+                  >
+                    {value}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
           <br />
           <li>
             Click <b>Add</b>
