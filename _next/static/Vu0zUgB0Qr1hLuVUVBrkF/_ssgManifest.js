@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fgo\u002F[go]","\u002Fob\u002F[shortName]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
