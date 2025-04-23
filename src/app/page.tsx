@@ -20,7 +20,7 @@ function HomeLink(props: HomeLinkProps) {
     <>
       <Link
         href={props.url}
-        target="_blank"
+        target={isExternalLink ? "_blank" : undefined}
         className={`body-text home-link ${props.style ? `${props.style}-link` : ""}`}
       >
         {props.style === "slack" && <SlackIcon />}
