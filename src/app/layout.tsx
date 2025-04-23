@@ -80,10 +80,7 @@ export default function RootLayout({
                 </div>
               </Link>
             </AppShellHeader>
-            <AppShellMain
-              h={"100%"}
-              className="!pt-[70px]"
-            >
+            <AppShellMain h={"100%"} className="!pt-[70px]">
               {children}
             </AppShellMain>
           </AppShell>

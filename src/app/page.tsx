@@ -27,10 +27,7 @@ export default function Home() {
         >
           Quick Links
         </div>
-        <Link
-          href={"/obs"}
-          className="body-text main-page-link"
-        >
+        <Link href={"/obs"} className="body-text main-page-link">
           View OB Kit Info
         </Link>
         <a

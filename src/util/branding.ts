@@ -4,35 +4,35 @@ export class GroupBranding {
     "#fafafa",
     "#000000",
     "#ef4444",
-    "#ffffff"
+    "#ffffff",
   );
   static readonly Lancs = new GroupBranding(
     "Lancs",
     "#ea3723",
     "#ffffff",
     "#ffffff",
-    "#000000"
+    "#000000",
   );
   static readonly Moorhen = new GroupBranding(
     "Moorhen",
     "#ff9382",
     "#000000",
     "#fcedd1",
-    "#000000"
+    "#000000",
   );
   static readonly David = new GroupBranding(
     "David Rose",
     "#1c4587",
     "#ffffff",
     "#ffffff",
-    "#1c4587"
+    "#1c4587",
   );
   static readonly Untitled = new GroupBranding(
     "Various Alumni",
     "#7e7e7e",
     "#ffffff",
     "#ffffff",
-    "#000000"
+    "#000000",
   );
 
   private constructor(
@@ -40,7 +40,7 @@ export class GroupBranding {
     public readonly color: string,
     public readonly textColor: string,
     public readonly buttonColor: string,
-    public readonly buttonTextColor: string
+    public readonly buttonTextColor: string,
   ) {}
 
   toString() {
@@ -58,7 +58,7 @@ export class GroupBranding {
 
     const toMultiply = 0.9;
     return `rgb(${Math.floor(parts[0] * toMultiply)},${Math.floor(
-      parts[1] * toMultiply
+      parts[1] * toMultiply,
     )},${Math.floor(parts[2] * toMultiply)})`;
   }
 }
