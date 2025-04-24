@@ -32,8 +32,6 @@ function HomeLink(props: HomeLinkProps) {
 }
 
 function Section(props: HomeSection) {
-  console.log(props);
-
   return (
     <>
       <div
