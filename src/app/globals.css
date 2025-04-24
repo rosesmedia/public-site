@@ -61,8 +61,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-page-link,
-.external-link {
+.home-link {
   background-color: #ef4444;
   color: #fafafa;
   padding: 10px 40px 10px 40px;
@@ -70,9 +69,6 @@ body {
   font-size: 20px;
   text-align: center;
   transition: all 0.2s ease-in-out;
-}
-
-.external-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,8 +76,7 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .main-page-link:hover,
-  .external-link:hover {
+  .home-link:hover {
     transform: scale(1.05);
   }
 }
@@ -89,14 +84,6 @@ body {
 .slack-link {
   background-color: #000;
   color: #fafafa;
-  padding: 10px 40px 10px 40px;
-  border-radius: 9999px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 .status-img {
