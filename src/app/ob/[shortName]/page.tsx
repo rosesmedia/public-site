@@ -63,7 +63,7 @@ export default async function SingleOBKitPage({
       </h1>
       <div className="group">
         <Link
-          className="body-text external-link"
+          className="body-text home-link"
           href={`https://${obKit.shortName.toLowerCase()}.graphics.roses.media`}
           target="_blank"
           rel="noreferrer noopener"
