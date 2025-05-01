@@ -67,6 +67,10 @@ const SECTIONS: HomeSection[] = [
         title: "Campus Map",
         url: "https://roseslive.co.uk/map",
       },
+      {
+        title: "Vase",
+        url: "https://vase.ury.org.uk",
+      },
     ],
   },
   {
