@@ -84,6 +84,14 @@ const SECTIONS: HomeSection[] = [
         title: "OB Stream keys/configurations",
         url: "https://docs.google.com/spreadsheets/d/12LvxeXGz3GcIUrza5TVJ6PbAsd7t6gQXDRj_jFvKFgk/edit?gid=0#gid=0",
       },
+      {
+        title: "York Radio OB Guides",
+        url: "https://drive.google.com/drive/u/1/folders/1lo7aKvSxF2VL-YCcx49C69CniYdTltoY",
+      },
+      {
+        title: "Lancs TV OB Guides",
+        url: "/go/la1-guides",
+      },
     ],
   },
   {
