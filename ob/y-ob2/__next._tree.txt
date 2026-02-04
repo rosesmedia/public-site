@@ -1,0 +1,8 @@
+:HL["/_next/static/chunks/70dc1a25e088d874.css","style"]
+:HL["/_next/static/chunks/428d836aa2e97057.css","style"]
+:HL["https://uptime.comp.ystv.co.uk/api/badge/60/status?style=for-the-badge","image"]
+:HL["https://uptime.comp.ystv.co.uk/api/badge/60/uptime?style=for-the-badge","image"]
+:HL["https://uptime.comp.ystv.co.uk/api/badge/60/ping?style=for-the-badge","image"]
+:HL["https://uptime.comp.ystv.co.uk/api/badge/60/avg-response?style=for-the-badge","image"]
+:HL["https://uptime.comp.ystv.co.uk/api/badge/60/cert-exp?style=for-the-badge","image"]
+0:{"buildId":"-KyQgj2TTQeLBMi88Xvhd","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"ob","paramType":null,"paramKey":"ob","hasRuntimePrefetch":false,"slots":{"children":{"name":"shortName","paramType":"d","paramKey":"y-ob2","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
