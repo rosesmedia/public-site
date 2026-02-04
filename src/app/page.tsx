@@ -66,8 +66,8 @@ const SECTIONS: HomeSection[] = [
       },
       {
         title: "Roses SSO Account",
-        url: "https://account.roses.media/realms/roses2026/account/"
-      }
+        url: "https://account.roses.media/realms/roses2026/account/",
+      },
     ],
   },
   // {
