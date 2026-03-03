@@ -1,12 +1,15 @@
 import { notFound } from "next/navigation";
 
 const GO_LINKS: Record<string, string> = {
-  "stream-keys":
-    "https://docs.google.com/spreadsheets/d/12LvxeXGz3GcIUrza5TVJ6PbAsd7t6gQXDRj_jFvKFgk/edit?gid=0#gid=0",
-  live: "https://docs.google.com/document/d/1kQcz9uh8wqEfJqCae-_olfhB3wvBGgQV1QxGBcpwnQo/edit?tab=t.0",
-  "la1-guides":
-    "https://drive.google.com/drive/u/0/folders/14Ake1gV-kIoC3aLVU-DZrLuLeyZPfFNv",
-  "vase-go-live": "https://youtu.be/sr-xGQ2_ViI",
+  // "stream-keys":
+  //   "https://docs.google.com/spreadsheets/d/12LvxeXGz3GcIUrza5TVJ6PbAsd7t6gQXDRj_jFvKFgk/edit?gid=0#gid=0",
+  // live: "https://docs.google.com/document/d/1kQcz9uh8wqEfJqCae-_olfhB3wvBGgQV1QxGBcpwnQo/edit?tab=t.0",
+  // "la1-guides":
+  //   "https://drive.google.com/drive/u/0/folders/14Ake1gV-kIoC3aLVU-DZrLuLeyZPfFNv",
+  // "vase-go-live": "https://youtu.be/sr-xGQ2_ViI",
+  interest: "https://forms.gle/4hWkP7ZQfrFoRcJC9",
+  "accomm-interest":
+    "https://docs.google.com/forms/d/e/1FAIpQLSeZQyWAWyybXaxrDp4a6NEZOtLoDY1SwbHY8uklTl9h0uMp4w/viewform",
 };
 
 export async function generateStaticParams() {
