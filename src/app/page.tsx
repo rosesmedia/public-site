@@ -55,10 +55,10 @@ const SECTIONS: HomeSection[] = [
   {
     title: "Get Involved",
     links: [
-      // {
-      //   title: "Sign Up For Crewing!",
-      //   url: "https://signup.roses.media",
-      // },
+      {
+        title: "Sign Up For Crewing!",
+        url: "https://signup.roses.media",
+      },
       {
         title: "Join the Slack!",
         url: "https://roseslive.slack.com/signup#/domain-signup",
