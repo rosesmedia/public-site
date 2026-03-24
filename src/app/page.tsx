@@ -64,14 +64,14 @@ const SECTIONS: HomeSection[] = [
         url: "https://roseslive.slack.com/signup#/domain-signup",
         style: "slack",
       },
-      {
-        title: "Register your Interest",
-        url: "https://forms.gle/4hWkP7ZQfrFoRcJC9",
-      },
-      {
-        title: "Interest for Accommodation (York only)",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSeZQyWAWyybXaxrDp4a6NEZOtLoDY1SwbHY8uklTl9h0uMp4w/viewform",
-      },
+      // {
+      //   title: "Register your Interest",
+      //   url: "https://forms.gle/4hWkP7ZQfrFoRcJC9",
+      // },
+      // {
+      //   title: "Interest for Accommodation (York only)",
+      //   url: "https://docs.google.com/forms/d/e/1FAIpQLSeZQyWAWyybXaxrDp4a6NEZOtLoDY1SwbHY8uklTl9h0uMp4w/viewform",
+      // },
       {
         title: "Roses SSO Account",
         url: "https://account.roses.media/realms/roses2026/account/",
