@@ -5,4 +5,4 @@
 :HL["https://uptime.comp.ystv.co.uk/api/badge/66/ping?style=for-the-badge","image"]
 :HL["https://uptime.comp.ystv.co.uk/api/badge/66/avg-response?style=for-the-badge","image"]
 :HL["https://uptime.comp.ystv.co.uk/api/badge/66/cert-exp?style=for-the-badge","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"ob","param":null,"prefetchHints":0,"slots":{"children":{"name":"shortName","param":{"type":"d","key":"l-ob3","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"4YHNA5autHfpl4mA_AVsA"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"ob","param":null,"prefetchHints":0,"slots":{"children":{"name":"shortName","param":{"type":"d","key":"l-ob3","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"KXQO6DbTLHtupYFa-yBX3"}
