@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "serve out"
+    "start": "serve out",
+    "format": "yarn prettier --write .",
+    "format:check": "yarn prettier --check ."
   },
   "dependencies": {
     "@mantine/core": "^8.3.14",
