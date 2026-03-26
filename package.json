@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "serve out",
-    "lint": "next lint"
+    "start": "serve out"
   },
   "dependencies": {
     "@mantine/core": "^8.3.14",
