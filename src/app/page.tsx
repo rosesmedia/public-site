@@ -72,33 +72,33 @@ const SECTIONS: HomeSection[] = [
       //   title: "Interest for Accommodation (York only)",
       //   url: "https://docs.google.com/forms/d/e/1FAIpQLSeZQyWAWyybXaxrDp4a6NEZOtLoDY1SwbHY8uklTl9h0uMp4w/viewform",
       // },
+      // {
+      //   title: "Roses SSO Account",
+      //   url: "https://account.roses.media/realms/roses2026/account/",
+      // },
+    ],
+  },
+  {
+    title: "Quick Links",
+    links: [
       {
-        title: "Roses SSO Account",
-        url: "https://account.roses.media/realms/roses2026/account/",
+        title: "View OB Kit Info",
+        url: "/obs",
+      },
+      {
+        title: "Graphics Scoreboard Control",
+        url: "https://graphics.roses.media",
+      },
+      {
+        title: "Campus Map",
+        url: "https://use.mazemap.com/#v=1&config=lancaster&campusid=341&zlevel=1&center=-2.792856,54.013139&zoom=16.9",
+      },
+      {
+        title: "Vase for Radio",
+        url: "https://vase.ury.org.uk",
       },
     ],
   },
-  // {
-  //   title: "Quick Links",
-  //   links: [
-  //     {
-  //       title: "View OB Kit Info",
-  //       url: "/obs",
-  //     },
-  //     {
-  //       title: "Graphics Scoreboard Control",
-  //       url: "https://graphics.roses.media",
-  //     },
-  //     {
-  //       title: "Campus Map",
-  //       url: "https://roseslive.co.uk/map",
-  //     },
-  //     {
-  //       title: "Vase",
-  //       url: "https://vase.ury.org.uk",
-  //     },
-  //   ],
-  // },
   // {
   //   title: "Tech links",
   //   links: [
