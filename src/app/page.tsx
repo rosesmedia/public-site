@@ -90,6 +90,10 @@ const SECTIONS: HomeSection[] = [
         url: "https://graphics.roses.media",
       },
       {
+        title: "Vase for Radio",
+        url: "https://vase.radio.roses.media",
+      },
+      {
         title: "Campus Map",
         url: "https://use.mazemap.com/#v=1&config=lancaster&campusid=341&zlevel=1&center=-2.792856,54.013139&zoom=16.9",
       },
