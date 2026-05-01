@@ -90,6 +90,10 @@ const SECTIONS: HomeSection[] = [
         url: "https://graphics.roses.media",
       },
       {
+        title: "Credits Generator",
+        url: "https://credit.roses.media",
+      },
+      {
         title: "Vase for Radio",
         url: "https://vase.radio.roses.media",
       },
